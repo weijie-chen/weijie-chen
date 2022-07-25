@@ -1,4 +1,7 @@
-### Hi there 👋
+### Hi there 👋, I am Weijie Chen.
+
+I am a **macroeconomic analyst/trader** seeking for trading opportunities based on global macro framework, my favorite markets are currency and commodity.<br><br>
+I am also a fervent **quantitative researcher**, exploring in Bayesian time series and machine learning framework for short turn profit gain. 
 
 <!--
 **weijie-chen/weijie-chen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
