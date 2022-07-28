@@ -12,7 +12,7 @@ The training materials in Github are 100% written by myself, used to be for new-
 | <a href='https://github.com/weijie-chen/Econometrics-With-Python'>Econometrics with Python</a>  | This is a crash course for reviewing the most important concepts and techniques of econometrics. The theories are presented lightly without hustles of derivation and Python codes are straightforward.        | 
 | <a href='https://github.com/weijie-chen/Time-Series-Analysis-With-Python'>Time Series Analysis with Python</a> | A series of lessons on time series analysis with Python        | 
 | <a href='https://github.com/weijie-chen/Bayesian-Statistics-Econometrics'>Bayesian Statistics with Python</a>  | Bayesian Statistics-Econometrics        | 
-|<img width=200/>|<img width=500/>|
+|<img width=500/>|<img width=500/>|
 <!--
 **weijie-chen/weijie-chen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
