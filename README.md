@@ -3,7 +3,7 @@
 I am a **macroeconomic analyst/trader** seeking for trading opportunities based on global macro framework, my favorite markets are currency and commodity.<br><br>
 I am also a fervent **quantitative researcher**, exploring in Bayesian time series and machine learning framework for short turn profit gain. 
 
-The training materials in Github are 100% written by myself, used to be for new-hire training in my previous institute. Regularly I give training sessions to junior analysts or students who are interested in quantitative trading or research. 
+The training materials in Github are 100% written by myself, used to be for new-hire training in my previous institute (hedge fund). Regularly I give training sessions to junior analysts or students who are interested in quantitative trading or research. 
 
 | Course      | Description |
 | :-----        |    :----:   |  
