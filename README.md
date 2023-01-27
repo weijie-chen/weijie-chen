@@ -1,7 +1,7 @@
 ### Hi there 👋, I am Weijie Chen.
 
 I am a **macroeconomic analyst/trader** seeking for trading opportunities based on global macro framework, my favorite markets are currency and commodity.<br><br>
-I am also a fervent **quantitative researcher**, exploring in Bayesian time series and machine learning framework for short-term profit gain. 
+I am also a fervent **quantitative researcher**, exploring in Bayesian time series and machine learning framework for short-term profit gain. <br><br>
 Python is my main quantitative toolkit, and I am learning Java and Kotlin too. 
 
 The training materials in my Github repositories are completely written by myself, used to be new-hire training materials in my previous institution (I was both a macro analyst and quantitative instructor in a boutique hedge fund). We used to organize internal training sessions for interns and new-hires to ensure they are on the same page with us technically, usually these trainings are fairly intensive, commonly held from 7pm-11pm in our conference room. Although never intended as a substitution of formal education, some of my academic friends are using my training material in their university's lectures too.
