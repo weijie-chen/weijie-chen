@@ -1,0 +1,18 @@
+project:
+  type: website
+  title: "Weijie Chen"
+
+website:
+  navbar:
+    title: "Home"
+    left:
+      - text: "Basic Statistics"
+        href: basic-statistics/
+      # - text: "Bayesian Statistics"
+      #   href: bayesian-statistics/
+      - text: "Econometrics"
+        href: econometrics/
+      - text: "Linear Algebra"
+        href: linear-algebra/
+      - text: "Financial Engineering"
+        href: financial-engineering/
