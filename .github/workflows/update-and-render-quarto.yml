@@ -14,14 +14,15 @@ jobs:
 
     - name: Clone independent repositories
       run: |
-        git clone https://github.com/your-username/Basic-Statistics-With-Python /tmp/Basic-Statistics-With-Python
-        git clone https://github.com/your-username/Bayesian-Statistics-Econometrics /tmp/Bayesian-Statistics-Econometrics
-        git clone https://github.com/your-username/Econometrics-With-Python /tmp/Econometrics-With-Python
-        git clone https://github.com/your-username/Linear-Algebra-With-Python /tmp/Linear-Algebra-With-Python
-        git clone https://github.com/your-username/Time-Series-and-Financial-Engineering-With-Python /tmp/Time-Series-and-Financial-Engineering-With-Python
+        
+        git clone https://github.com/weijie-chen/Basic-Statistics-With-Python /tmp/Basic-Statistics-With-Python
+        git clone https://github.com/weijie-chen/Bayesian-Statistics-Econometrics /tmp/Bayesian-Statistics-Econometrics
+        git clone https://github.com/weijie-chen/Econometrics-With-Python /tmp/Econometrics-With-Python
+        git clone https://github.com/weijie-chen/Linear-Algebra-With-Python /tmp/Linear-Algebra-With-Python
+        git clone https://github.com/weijie-chen/Time-Series-and-Financial-Engineering-With-Python.git /tmp/Time-Series-and-Financial-Engineering-With-Python
 
     - name: Clone virtualenv_management repository
-      run: git clone https://github.com/your-username/virtualenv_management /tmp/virtualenv_management
+      run: git clone https://github.com/weijie-chen/virtualenv_management /tmp/virtualenv_management
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -77,11 +78,11 @@ jobs:
 
         # Copy and convert for each repository
         declare -A repos=(
-          ["Basic Statistics"]="/tmp/Basic-Statistics-With-Python:/mnt/f/8887_github_repos/weijie-chen/basic-statistics"
-          ["Bayesian Statistics"]="/tmp/Bayesian-Statistics-Econometrics:/mnt/f/8887_github_repos/weijie-chen/bayesian-statistics"
-          ["Econometrics"]="/tmp/Econometrics-With-Python:/mnt/f/8887_github_repos/weijie-chen/econometrics"
-          ["Linear Algebra"]="/tmp/Linear-Algebra-With-Python:/mnt/f/8887_github_repos/weijie-chen/linear-algebra"
-          ["Financial Engineering"]="/tmp/Time-Series-and-Financial-Engineering-With-Python:/mnt/f/8887_github_repos/weijie-chen/financial-engineering"
+          ["Basic Statistics"]="/tmp/Basic-Statistics-With-Python:${GITHUB_WORKSPACE}/basic-statistics"
+          ["Bayesian Statistics"]="/tmp/Bayesian-Statistics-Econometrics:${GITHUB_WORKSPACE}/bayesian-statistics"
+          ["Econometrics"]="/tmp/Econometrics-With-Python:${GITHUB_WORKSPACE}/econometrics"
+          ["Linear Algebra"]="/tmp/Linear-Algebra-With-Python:${GITHUB_WORKSPACE}/linear-algebra"
+          ["Financial Engineering"]="/tmp/Time-Series-and-Financial-Engineering-With-Python:${GITHUB_WORKSPACE}/financial-engineering"
         )
 
         for title in "${!repos[@]}"; do
@@ -101,8 +102,8 @@ jobs:
     - name: Render Quarto project
       run: quarto render
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+    - name: GitHub Pages action
+      uses: peaceiris/actions-gh-pages@v4.0.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_site
