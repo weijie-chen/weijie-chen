@@ -45,6 +45,10 @@ jobs:
 
     - name: Verify Quarto installation
       run: quarto --version
+      
+    - name: Install Jupyter and dependencies
+      run: |
+        python3 -m pip install jupyter nbformat nbclient
 
     - name: Copy and convert .ipynb to .qmd
       run: |
