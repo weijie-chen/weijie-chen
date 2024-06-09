@@ -43,7 +43,12 @@ jobs:
         echo 'PATH=/opt/quarto/bin:$PATH' >> $GITHUB_ENV
 
     - name: Verify Quarto installation
-      run: quarto --version
+      run: |
+        # Ensure necessary commands are available
+        sudo apt-get update
+        sudo apt-get install -y coreutils
+        source $GITHUB_ENV
+        quarto --version
 
     - name: Install Jupyter and dependencies
       run: |
