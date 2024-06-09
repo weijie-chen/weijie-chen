@@ -14,12 +14,11 @@ jobs:
 
     - name: Clone independent repositories
       run: |
-        
         git clone https://github.com/weijie-chen/Basic-Statistics-With-Python /tmp/Basic-Statistics-With-Python
         git clone https://github.com/weijie-chen/Bayesian-Statistics-Econometrics /tmp/Bayesian-Statistics-Econometrics
         git clone https://github.com/weijie-chen/Econometrics-With-Python /tmp/Econometrics-With-Python
         git clone https://github.com/weijie-chen/Linear-Algebra-With-Python /tmp/Linear-Algebra-With-Python
-        git clone https://github.com/weijie-chen/Time-Series-and-Financial-Engineering-With-Python.git /tmp/Time-Series-and-Financial-Engineering-With-Python
+        git clone https://github.com/weijie-chen/Time-Series-and-Financial-Engineering-With-Python /tmp/Time-Series-and-Financial-Engineering-With-Python
 
     - name: Clone virtualenv_management repository
       run: git clone https://github.com/weijie-chen/virtualenv_management /tmp/virtualenv_management
@@ -36,7 +35,7 @@ jobs:
       run: |
         cd /tmp/virtualenv_management
         poetry install
-    
+
     - name: Install Quarto
       run: |
         wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.2.313/quarto-1.2.313-linux-amd64.deb
@@ -45,10 +44,18 @@ jobs:
 
     - name: Verify Quarto installation
       run: quarto --version
-      
+
     - name: Install Jupyter and dependencies
       run: |
         python3 -m pip install jupyter nbformat nbclient
+
+    - name: Set up Poetry environment for Quarto
+      run: |
+        cd /tmp/virtualenv_management
+        echo "$(poetry env info --path)/bin" >> $GITHUB_PATH
+        echo 'source $(poetry env info --path)/bin/activate' >> $GITHUB_ENV
+        source $(poetry env info --path)/bin/activate
+        python3 -m ipykernel install --user --name=$(basename $(poetry env info --path))
 
     - name: Copy and convert .ipynb to .qmd
       run: |
@@ -113,9 +120,11 @@ jobs:
         done
 
     - name: Render Quarto project
-      run: quarto render
+      run: |
+        source $(poetry env info --path)/bin/activate
+        quarto render
 
-    - name: GitHub Pages action
+    - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4.0.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
