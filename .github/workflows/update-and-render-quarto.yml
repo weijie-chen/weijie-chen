@@ -1,0 +1,108 @@
+name: Update and Render Quarto
+
+on:
+  repository_dispatch:
+    types: [update-from-repo]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout weijie-chen repository
+      uses: actions/checkout@v3
+
+    - name: Clone independent repositories
+      run: |
+        git clone https://github.com/your-username/Basic-Statistics-With-Python /tmp/Basic-Statistics-With-Python
+        git clone https://github.com/your-username/Bayesian-Statistics-Econometrics /tmp/Bayesian-Statistics-Econometrics
+        git clone https://github.com/your-username/Econometrics-With-Python /tmp/Econometrics-With-Python
+        git clone https://github.com/your-username/Linear-Algebra-With-Python /tmp/Linear-Algebra-With-Python
+        git clone https://github.com/your-username/Time-Series-and-Financial-Engineering-With-Python /tmp/Time-Series-and-Financial-Engineering-With-Python
+
+    - name: Clone virtualenv_management repository
+      run: git clone https://github.com/your-username/virtualenv_management /tmp/virtualenv_management
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install Poetry
+      run: curl -sSL https://install.python-poetry.org | python3 -
+
+    - name: Install dependencies
+      run: |
+        cd /tmp/virtualenv_management
+        poetry install
+
+    - name: Copy and convert .ipynb to .qmd
+      run: |
+        # Define the copy and convert functions
+        copy_repo_contents() {
+          local sourceDir="$1"
+          local targetDir="$2"
+
+          if [ -d "$targetDir" ]; then
+              rm -rf "$targetDir"
+          fi
+          cp -r "$sourceDir" "$targetDir"
+        }
+
+        convert_ipynb_to_qmd() {
+          local path="$1"
+          find "$path" -name '*.ipynb' -exec quarto convert {} \;
+          find "$path" -name '*.ipynb' -delete
+        }
+
+        new_quarto_yml() {
+          local path="$1"
+          local projectTitle="$2"
+
+          chapters=$(find "$path" -name '*.qmd' | sort)
+
+          # Initialize the YAML content
+          yml_content="project:\n  type: book\n  title: \"$projectTitle\"\n\nbook:\n  chapters:\n"
+
+          # Append each chapter to the YAML content
+          while IFS= read -r chapter; do
+              chapter_name=$(basename "$chapter" .qmd)
+              relative_path=$(realpath --relative-to="$path" "$chapter")
+              yml_content+="    - chapter: \"$chapter_name\"\n      file: \"$relative_path\"\n"
+          done <<< "$chapters"
+
+          # Write the YAML content to _quarto.yml
+          echo -e "$yml_content" > "$path/_quarto.yml"
+        }
+
+        # Copy and convert for each repository
+        declare -A repos=(
+          ["Basic Statistics"]="/tmp/Basic-Statistics-With-Python:/mnt/f/8887_github_repos/weijie-chen/basic-statistics"
+          ["Bayesian Statistics"]="/tmp/Bayesian-Statistics-Econometrics:/mnt/f/8887_github_repos/weijie-chen/bayesian-statistics"
+          ["Econometrics"]="/tmp/Econometrics-With-Python:/mnt/f/8887_github_repos/weijie-chen/econometrics"
+          ["Linear Algebra"]="/tmp/Linear-Algebra-With-Python:/mnt/f/8887_github_repos/weijie-chen/linear-algebra"
+          ["Financial Engineering"]="/tmp/Time-Series-and-Financial-Engineering-With-Python:/mnt/f/8887_github_repos/weijie-chen/financial-engineering"
+        )
+
+        for title in "${!repos[@]}"; do
+          IFS=':' read -r source target <<< "${repos[$title]}"
+          echo "Processing repository: $source"
+          
+          # Copy contents
+          copy_repo_contents "$source" "$target"
+          
+          # Convert .ipynb files to .qmd and remove .ipynb files
+          convert_ipynb_to_qmd "$target"
+          
+          # Generate _quarto.yml
+          new_quarto_yml "$target" "$title"
+        done
+
+    - name: Render Quarto project
+      run: quarto render
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
