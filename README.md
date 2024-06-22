@@ -1,12 +1,17 @@
-### Hi there 👋, I am Weijie Chen.
+### Hi there 👋, I am Weijie Chen. Welcome to my GitHub!
 
-I am a **macroeconomic analyst/trader** seeking for trading opportunities based on global macro framework, my favorite markets are currency and commodity.<br><br>
+I am a **software engineer** specializing in Fintech risk monitoring systems. Previously, I worked as a **macroeconomic analyst/trader**, focusing on trading opportunities based on a global macro framework, particularly in currency and commodity markets. 
 
-The training materials in my Github repositories were written by me, used to be new-hire training materials in my previous institution (I was both a macro analyst and quantitative instructor in a tiny hedge fund, unfortunately defunct already). We used to organize internal training sessions for interns and new-hires, usually these trainings were held from 7pm-11pm in our conference room. The notes are not difficult, with a freshman math education would be enough to walk through on your own.
+#### About My Training Materials:
+These materials were initially used for new-hire training at my previous institution, where I also served as a macro analyst and quantitative instructor.
+We organized internal training sessions for interns and new-hires, typically held from 7pm-11pm in our conference room.
+The notes are designed to be approachable, requiring only a basic understanding of freshman-level math.
+#### Important Note:
+All institutional proprietary information and data have been removed from these training materials. Please refrain from asking for proprietary models or data due to my Non-Disclosure Agreement.
 
-Please note that all institutional proprietary information and data has been cleared from training materials. So please do not ask me my institution's proprietary models or data, which unfortunately cannot be disclosed due to Non-Disclosure Agreement. 
+Feel free to explore my repositories, drop me a message, or add me on LinkedIn. I'm always open to connecting with fellow professionals and enthusiasts.
 
-Feel free to drop me messages or add me on Linkedin.
+
 
 | Course      | Description |
 | :-----        |    :----:   |  
