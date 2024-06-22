@@ -3,8 +3,8 @@
 I am a **software engineer** specializing in Fintech risk monitoring systems. Previously, I worked as a **macroeconomic analyst/trader**, focusing on trading opportunities based on a global macro framework, particularly in currency and commodity markets. 
 
 #### About My Training Materials:
-These materials were initially used for new-hire training at my previous institution, where I also served as a macro analyst and quantitative instructor.
-We organized internal training sessions for interns and new-hires, typically held from 7pm-11pm in our conference room.
+These materials were initially prepared by me for new-hire training at my previous institution, where I also served as chief macro analyst and quantitative instructor.
+We organized internal training sessions for interns, new-hires and even university students, typically held from 7pm-11pm in our conference room.
 The notes are designed to be approachable, requiring only a basic understanding of freshman-level math.
 #### Important Note:
 All institutional proprietary information and data have been removed from these training materials. Please refrain from asking for proprietary models or data due to my Non-Disclosure Agreement.
