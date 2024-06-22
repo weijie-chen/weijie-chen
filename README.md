@@ -14,6 +14,8 @@ Please note that all institutional proprietary information and data has been cle
 | <a href='https://github.com/weijie-chen/Time-Series-Analysis-With-Python'>Time Series, Financial Engineering and Algorithmic Trading with Python</a> |  This is a compound training sessions of time series analysis, financial engineering and algorithmic trading, the Part I covers basic time series concepts such as  <b>ARIMA</b>,      <b>GARCH</b> ans <b>(S)VAR</b>, also cover more advanced theory such as <b>State Space Model</b> and <b>Hidden Markov Chain</b>. The Part II covers the basics of financial engineering such <b>bond valueation</b>, <b>portfolio optimization</b>, <b>Black-Scholes model</b> and various stochatic process models. The Part III will demonstrate the practicalities, e.g. <b>algorithmic trading</b>. The training will try to explain the mathematical mechanism behind each theory, rather than forcing you to memorize a bunch of black box operations.    | 
 | <a href='https://github.com/weijie-chen/Bayesian-Statistics-Econometrics'>Bayesian Statistics with Python</a>  | Bayesian statistics is the last pillar of quantitative framework, also the most challenging subject. The course will explore the algorithms of <b>Markov chain Monte Carlo</b> (MCMC), specifically <b>Metropolis-Hastings</b>, <b>Gibbs Sampler</b> and etc., we will build up our own toy model from crude Python functions. In the meanwhile, we will cover the PyMC3, which is a library for probabilistic programming specializing in Bayesian statistics.| 
 |<img width=700/>|<img width=500/>|
+
+Feel free to drop me messages or add me on Linkedin.
 <!--
 **weijie-chen/weijie-chen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
