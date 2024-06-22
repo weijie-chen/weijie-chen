@@ -6,6 +6,8 @@ The training materials in my Github repositories were written by me, used to be 
 
 Please note that all institutional proprietary information and data has been cleared from training materials. So please do not ask me my institution's proprietary models or data, which unfortunately cannot be disclosed due to Non-Disclosure Agreement. 
 
+Feel free to drop me messages or add me on Linkedin.
+
 | Course      | Description |
 | :-----        |    :----:   |  
 | <a href='https://github.com/weijie-chen/Linear-Algebra-With-Python'>Linear Algebra with Python</a>      | This training will walk you through all the must-know concepts that set the foundation of data science or advanced quantitative skill sets. Suitable for statisticians, econometricians, quantitative analysts, data scientists, etc. to quickly refresh linear algebra with the assistance of Python computation and visualization. Core concepts covered are: <b>linear combination</b>,  <b>vector space,  <b>linear transformation</b>,  <b>eigenvalues</b> and <b>-vector</b>,  <b>diagnolization</b>,  <b>singular value decomposition</b>, etc.      |
@@ -15,7 +17,7 @@ Please note that all institutional proprietary information and data has been cle
 | <a href='https://github.com/weijie-chen/Bayesian-Statistics-Econometrics'>Bayesian Statistics with Python</a>  | Bayesian statistics is the last pillar of quantitative framework, also the most challenging subject. The course will explore the algorithms of <b>Markov chain Monte Carlo</b> (MCMC), specifically <b>Metropolis-Hastings</b>, <b>Gibbs Sampler</b> and etc., we will build up our own toy model from crude Python functions. In the meanwhile, we will cover the PyMC3, which is a library for probabilistic programming specializing in Bayesian statistics.| 
 |<img width=700/>|<img width=500/>|
 
-Feel free to drop me messages or add me on Linkedin.
+
 <!--
 **weijie-chen/weijie-chen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
