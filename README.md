@@ -6,8 +6,6 @@ I am a **software engineer** specializing in Fintech risk monitoring systems. Pr
 These materials were initially prepared by me for new-hire training at my previous institution, where I also served as chief macro analyst and quantitative instructor.
 We organized internal training sessions for interns, new-hires and even university students, typically held from 7pm-11pm in our conference room.
 The notes are designed to be approachable, requiring only a basic understanding of freshman-level math.
-#### Important Note:
-All institutional proprietary information and data have been removed from these training materials. Please refrain from asking for proprietary models or data due to my Non-Disclosure Agreement.
 
 Feel free to explore my repositories, drop me a message, or add me on [LinkedIn](https://www.linkedin.com/in/weijie-chen-frm-235814218/). I'm always open to connecting with fellow professionals and enthusiasts.
 
