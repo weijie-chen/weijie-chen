@@ -1,6 +1,6 @@
 ### Hi there 👋, I am Weijie Chen. Welcome to my GitHub!
 
-I am a **software engineer** specializing in Fintech risk monitoring systems. Previously, I worked as a quant macro strategist, focusing on trading opportunities based on a global macro framework, particularly in currency and commodity markets. 
+I am a **risk quant / software engineer** specializing in Fintech risk monitoring systems. Previously, I worked as a quant macro strategist, focusing on trading opportunities based on a global macro framework, particularly in currency and commodity markets. 
 
 #### About My Training Materials:
 These materials were initially prepared by me for new-hire training at my previous institution, where I also served as chief macro analyst and quantitative instructor.
