@@ -3,7 +3,7 @@
 I am a **risk quant / software engineer** specializing in hedge fund risk monitoring systems. Previously, I worked as a quant macro strategist, focusing on trading opportunities based on a global macro framework, particularly in currency and commodity markets. 
 
 #### About My Training Materials:
-These materials were initially prepared by me for new-hire training at my previous institution, where I also served as chief macro analyst and quantitative instructor.
+These materials were initially prepared by me for new-hire training at my previous institution.
 We organized internal training sessions for interns, new-hires and even university students, typically held from 7pm-11pm in our conference room.
 The notes are designed to be accessible, requiring only a basic understanding of freshman-level math.
 
