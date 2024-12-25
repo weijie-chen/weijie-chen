@@ -7,7 +7,7 @@ These materials were initially prepared by me for new-hire training at my previo
 We organized internal training sessions for interns, new-hires and even university students, typically held from 7pm-11pm in our conference room.
 The notes are designed to be accessible, requiring only a basic understanding of freshman-level math.
 
-Feel free to explore my repositories or drop me a message, feel free to add me on LinkedIn [(Weijie Chen)](https://www.linkedin.com/in/weijie-chen-frm-235814218/). I'm always open to connecting with fellow professionals and enthusiasts.
+Feel free to explore my repositories or drop me a message, you can also add me on LinkedIn [(Weijie Chen)](https://www.linkedin.com/in/weijie-chen-frm-235814218/). I'm always open to connecting with fellow professionals and enthusiasts.
 
 Please note that most of jupyternote books are rendered into webpages in my personal site as well: [www.weijiechen.com](https://www.weijiechen.com).
 
