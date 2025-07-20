@@ -9,7 +9,7 @@ The notes are designed to be accessible, requiring only a basic understanding of
 
 Feel free to explore my repositories or drop me a message, you can also add me on LinkedIn [(Weijie Chen)](https://www.linkedin.com/in/weijie-chen-frm-235814218/). I'm always open to connecting with fellow professionals and enthusiasts.
 
-Please note that most of jupyternote books are rendered into webpages in my personal site as well: [www.weijiechen.com](https://www.weijiechen.com).
+Please note that most of jupyternote books are rendered into webpages in my personal site as well: [www.weijiechen.com](https://weijie-chen-github-io.vercel.app/).
 
 
 | Course      | Description | Repos |
