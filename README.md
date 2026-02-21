@@ -2,6 +2,9 @@
 
 I am a **risk quant / software engineer** specializing in hedge fund risk monitoring systems. Previously, I worked as a quant macro strategist, focusing on trading opportunities based on a global macro framework, particularly in currency and commodity markets. 
 
+My current personal project:
+Stochastic Atlas:<a href='https://stochastic-atlas.vercel.app/ '>Stochastic Atlas</a>   
+
 #### About My Training Materials:
 These materials were initially prepared by me for new-hire training at my previous institution.
 We organized internal training sessions for interns, new-hires and even university students, typically held from 7pm-11pm in our conference room.
@@ -35,4 +38,5 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
 
