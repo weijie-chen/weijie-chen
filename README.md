@@ -4,9 +4,10 @@ I am a **risk quant / software engineer** specializing in hedge fund risk monito
 
 ### Current Project
 
-[Stochastic Atlas](https://stochastic-atlas.vercel.app/)
+| Project | Content |
+|---------|----------|
+| [Stochastic Atlas](https://stochastic-atlas.vercel.app/) | Visualization-driven exploration of theoretical quantitative finance models, integrating geometric intuition with formal mathematical derivations. |
 
-A visualization-driven exploration of theoretical quantitative finance models, designed to build geometric and intuitive understanding alongside formal derivations.
 
 #### About My Training Materials:
 These materials were initially prepared by me for new-hire training at my previous institution.
@@ -41,6 +42,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
 
 
 
